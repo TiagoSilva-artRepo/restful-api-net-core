@@ -34,5 +34,23 @@ namespace RestfulAPI.Controllers
             var coursesForAuthorFromRepo = _courseLibraryRepository.GetCourses(authorId);
             return Ok(_mapper.Map<IEnumerable<CourseDto>>(coursesForAuthorFromRepo));
         }
+
+        [HttpGet("courseId")]
+        public ActionResult<CourseDto> GetCourseForAuthor(Guid authorId, Guid courseId)
+        {
+            if (!_courseLibraryRepository.AuthorExists(authorId))
+            {
+                return NotFound();
+            }
+
+            var coursesForAuthorFromRepo = _courseLibraryRepository.GetCourse(authorId, courseId);
+
+            if (coursesForAuthorFromRepo == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(_mapper.Map<CourseDto>(coursesForAuthorFromRepo));
+        }
     }
 }
