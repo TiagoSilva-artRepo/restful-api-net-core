@@ -20,7 +20,8 @@ namespace RestfulAPI.Profiles
                 .ForMember(
                     dest => dest.Age,
                     opt => opt.MapFrom(src => src.DateOfBirth.GetCurrentAge()));
-            ;
+
+            CreateMap<AuthorForCreationDto, Author>();
         }
     }
 }
