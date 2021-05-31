@@ -126,3 +126,6 @@ C:\Development\Practice\c#\RestfulAPI\RestfulAPI\obj\Debug\netcoreapp3.1\Restful
 C:\Development\Practice\c#\RestfulAPI\RestfulAPI\obj\Debug\netcoreapp3.1\RestfulAPI.genruntimeconfig.cache
 C:\Development\Practice\c#\RestfulAPI\RestfulAPI\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Development\Practice\c#\RestfulAPI\RestfulAPI\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Development\Practice\c#\RestfulAPI\RestfulAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Development\Practice\c#\RestfulAPI\RestfulAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Development\Practice\c#\RestfulAPI\RestfulAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
