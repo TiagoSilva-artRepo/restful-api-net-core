@@ -109,7 +109,7 @@ namespace RestfulAPI.Controllers
         }
 
         [HttpPatch("{courseId}")]
-        public ActionResult PartiallyUpdateCourseForAuthor(Guid authorId, Guid courseId, CourseForUpdateDto course, JsonPatchDocument<CourseForUpdateDto> patchDocument)
+        public ActionResult PartiallyUpdateCourseForAuthor(Guid authorId, Guid courseId, [FromBody]CourseForUpdateDto course, [FromQuery]JsonPatchDocument<CourseForUpdateDto> patchDocument)
         {
             if (!_courseLibraryRepository.AuthorExists(authorId))
             {
